@@ -1,0 +1,12 @@
+#================= Users ==================
+
+dev:
+  - username: dev
+    name: dev
+    # password: "strong password"
+    profile: |
+      alias ll='ls -lah'
+      # PS1="\[\033[36m\][\t] \[\033[0;33m\][prod] \[\033[0m\][\[\033[1;31m\]\u\[\033[0m\]@\h:\[\033[36m\][\w]\[\033[0m\]]\$ "
+    ssh_key:
+      - "ssh-ed25519 ssh_key:"
+    priv: "dev ALL=(ALL)    NOPASSWD: ALL"

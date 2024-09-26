@@ -1,0 +1,11 @@
+---
+  - name: create unix user on the hosts with sudo and permissions
+    hosts: "{{ hosts }}"
+
+    roles:
+      - roles/system-users
+
+    tasks:
+
+  - name: include config users play
+    ansible.builtin.import_playbook: config_users.yml
